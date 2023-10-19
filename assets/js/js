@@ -1,0 +1,75 @@
+<script>
+        const downloadButton = document.getElementById('downloadButton');
+        const twibbonCanvas = document.getElementById('twibbonCanvas');
+        const ctx = twibbonCanvas.getContext('2d');
+        const choosePhotoButton = document.getElementById('choosePhotoButton');
+        let uploadedImage;
+        let scale = 1.0;
+        let isDragging = false;
+        let startX, startY;
+        let originalImageX = 0;
+        let originalImageY = 0;
+    
+        const twibbonImg = new Image();
+        twibbonImg.src = '';
+    
+        // Tambahkan handler untuk memuat gambar Twibbon saat gambar selesai dimuat
+        twibbonImg.onload = function () {
+            renderImageWithScale();
+        };
+    
+        imageInput.addEventListener('change', function (event) {
+            const file = imageInput.files[0];
+            if (file) {
+                uploadedImage = new Image();
+                uploadedImage.src = URL.createObjectURL(file);
+                uploadedImage.onload = function () {
+                    uploadedImageX = originalImageX;
+                    uploadedImageY = originalImageY;
+                    renderImageWithScale();
+                };
+            }
+        });
+    
+        twibbonCanvas.addEventListener('mousedown', function (event) {
+            isDragging = true;
+            startX = event.clientX;
+            startY = event.clientY;
+            originalImageX = uploadedImageX;
+            originalImageY = uploadedImageY;
+        });
+    
+        twibbonCanvas.addEventListener('mousemove', function (event) {
+            if (isDragging) {
+                const offsetX = event.clientX - startX;
+                const offsetY = event.clientY - startY;
+    
+                uploadedImageX = originalImageX + offsetX;
+                uploadedImageY = originalImageY + offsetY;
+    
+                renderImageWithScale();
+            }
+        });
+    
+        twibbonCanvas.addEventListener('mouseup', function () {
+            isDragging = false;
+        });
+    
+        downloadButton.addEventListener('click', function () {
+            const dataURL = twibbonCanvas.toDataURL('image/png');
+            const a = document.createElement('a');
+            a.href = dataURL;
+            a.download = 'twibbon.png';
+            a.click();
+        });
+    
+        function renderImageWithScale() {
+            ctx.clearRect(0, 0, twibbonCanvas.width, twibbonCanvas.height);
+            // Gambar gambar yang diunggah terlebih dahulu
+            if (uploadedImage) {
+                ctx.drawImage(uploadedImage, uploadedImageX, uploadedImageY, twibbonCanvas.width * scale, twibbonCanvas.height * scale);
+            }
+            // Kemudian gambar Twibbon di atasnya
+            ctx.drawImage(twibbonImg, 0, 0, twibbonCanvas.width, twibbonCanvas.height);
+        }
+    </script>
