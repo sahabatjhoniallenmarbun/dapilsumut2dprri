@@ -1401,11 +1401,57 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+#imageInput{
+ 
+ 
+  width: 257px !important;
+ 
+  
+  
+  opacity:0;
+  z-index:-99 ;
+
+}
+#pilihpoto{
+  background-color: #1BAAA0 !important;
+  height: 45px !important;
+  width: 257px !important;
+  border-radius: 10px !important;
+  font-size: larger;
+  color: #eee;
+}
+
+
+#downloadButton{
+  background-color: #1BAAA0 !important;
+  height: 45px !important;
+  width: 257px !important;
+  border-radius: 10px !important;
+  font-size: larger;
+  color: #eee;
+}
+
+#twibbonCanvas {
+  background-color: #d6faf6;
+  border-radius: 3%;
+}
+
 #footer {
   background: black;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
+}
+#footer2 {
+  background: rgb(237, 253, 255);
+  color: #fff;
+  font-size: 14px;
+}
+#footer .footer-top2 {
+  background: #e58e8e;
+  width: 700 px;
+  border-bottom: 1px solid #222222;
+  padding: 60px 0 30px 0;
 }
 
 #footer .footer-top {
