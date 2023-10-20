@@ -39,7 +39,7 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-inner-pages" style="height: 35px;">
+  <header id="header" class="fixed-top header-inner-pages" >
     <div class="container d-flex align-items-center justify-content-lg-between">
 
       
@@ -54,36 +54,7 @@
 
   <main id="main">
 
-    <section id="clients" class="clients">
-      <div class="container justify-content-center" data-aos="zoom-in">
-
-        <div class="clients-slider swiper" style="height: 100px; width: 500px;">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="cover">
-      <div class="container">
-        <div class="row justify-content-center" style="height: 250px; width: 400px;">
-          <img src="assets/img/galleripolitik/cover3-01.png" alt="">
-
-        </div>
-
-      </div>
-
-    </section>
+    
 
     <section id="transsitions page">
       <div class="img-thumbnail">
@@ -118,27 +89,50 @@
       </div>
 
     </section>
+
+    <section>
+      <div class="col-lg-2 col-md-6 mt-3 ">
+        <div class="row justify-content-center"><button id="popupBtn">Bagi link</button></div>
+        
+      <div id="popup" class="popup">
+          <div class="popup-content">
+              <span class="close" id="closeBtn">&times;</span>
+              <img src="assets/img/galleripolitik/TWIBBON BARU PAK BOSS-01.png" alt="Contoh Gambar" width="200px" height="200px">
+              <div class="social-icons">
+                  <a href="https://www.facebook.com" target="_blank"><img src="assets/img/asettestimo/fb1.png" alt="Facebook"></a>
+                  <a href="https://www.instagram.com" target="_blank"><img src="assets/img/asettestimo/ig.png" alt="Instagram"></a>
+                  <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank"><img src="assets/img/asettestimo/wa.png" alt="WhatsApp"></a>
+              </div>
+              <button id="copyBtn">Salin Link</button>
+          </div>
+      </div>
+      </div>
+      
+    </section>
+
+    
+     
+
+
     <!-- ======= Breadcrumbs ======= -->
     <footer id="footer2">
         <div class="footer-top2">
-          <div class="container">
-            <div class="col-lg-3 col-md-6 mt-13" >
-               <div class="row"><canvas id="twibbonCanvas" width="500px" height="500px"></canvas>
-              <div class="col-lg-3 col-md-6">
-                <div class="footer-info">
-                  
-                  
-                </div>
-              </div>
+          
+            <div class="row justify-content-center">
+              <canvas id="twibbonCanvas" width="500px" height="500px"></canvas>
+            <div >
+             
+                
+              
     
-              <div class="col-lg-2 col-md-6 mt-1">
-                <div class="row justify-content-center"> <button id="pilihpoto">
+              <div class="col-lg-2 col-md-6 mt-5">
+                <div class="row justify-content-center"> <button id="pilihpoto" style= "width: 500px; height: 20px;">
                     <h3>Choose a photo</h3><input type="file"  id="imageInput" >
                     
                   </button></div>
                 
               </div>
-              <div class="col-lg-2 col-md-6 mt-1 ">
+              <div class="col-lg-2 col-md-6 mt-3 ">
                 <div class="row justify-content-center"><button id="downloadButton"><h3>Download</h3></button></div>
                 
               </div>
@@ -151,6 +145,10 @@
         </div>
       </div>
 
+      
+
+
+      
     <!-- End Breadcrumbs -->
 
     <section class="inner-page">
@@ -160,6 +158,9 @@
     </section>
 
   </main><!-- End #main -->
+
+   <!-- ======= Features Section ======= -->
+   <!-- End Features Section -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -224,6 +225,27 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+  <script>document.getElementById("popupBtn").addEventListener("click", function() {
+    document.getElementById("popup").style.display = "block";
+});
+
+document.getElementById("closeBtn").addEventListener("click", function() {
+    document.getElementById("popup").style.display = "none";
+});
+
+document.getElementById("copyBtn").addEventListener("click", function() {
+    // Logic to copy the link to the clipboard
+    var dummyLink = document.createElement("input");
+    var linkToCopy = window.location.href;
+    dummyLink.value = linkToCopy;
+    document.body.appendChild(dummyLink);
+    dummyLink.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummyLink);
+    alert("Link telah disalin: " + linkToCopy);
+});</script>
+ 
+
   <script>
     const downloadButton = document.getElementById('downloadButton');
     const twibbonCanvas = document.getElementById('twibbonCanvas');
