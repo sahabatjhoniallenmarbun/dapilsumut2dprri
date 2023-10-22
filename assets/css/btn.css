@@ -1,0 +1,231 @@
+.btn,button.btn {
+    border: none;
+    cursor: pointer;
+    font-family: Plus Jakarta Sans,-apple-system,BlinkMacSystemFont,Roboto,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol!important
+}
+
+.btn--primary,button.btn--primary {
+    background: #1baaa0;
+    color: #fff
+}
+
+.btn--primary:active,.btn--primary:focus,.btn--primary:hover,button.btn--primary:active,button.btn--primary:focus,button.btn--primary:hover {
+    background: #148078
+}
+
+.btn--dark-primary,button.btn--dark-primary {
+    background: #106660;
+    color: #fff
+}
+
+.btn--dark-primary:hover,button.btn--dark-primary:hover {
+    filter: brightness(90%)
+}
+
+.btn--dark-primary:active,.btn--dark-primary:focus,button.btn--dark-primary:active,button.btn--dark-primary:focus {
+    filter: brightness(80%)
+}
+
+.btn--secondary,button.btn--secondary {
+    background: rgba(27,170,160,.2);
+    color: #1baaa0
+}
+
+.btn--secondary:hover,button.btn--secondary:hover {
+    background: #f2fffe
+}
+
+.btn--secondary:active,.btn--secondary:focus,button.btn--secondary:active,button.btn--secondary:focus {
+    background: #e7fffe
+}
+
+.btn--red,button.btn--red {
+    background: #e40f0f;
+    color: #fff
+}
+
+.btn--red:active,.btn--red:focus,.btn--red:hover,button.btn--red:active,button.btn--red:focus,button.btn--red:hover {
+    background: #890909
+}
+
+.btn--white-red,button.btn--white-red {
+    background: #fff;
+    color: #e40f0f
+}
+
+.btn--white-red:hover,button.btn--white-red:hover {
+    background: #ffe7e7
+}
+
+.btn--white-red:active,.btn--white-red:focus,button.btn--white-red:active,button.btn--white-red:focus {
+    background: #ffd7d7
+}
+
+.btn--white-primary,button.btn--white-primary {
+    background: #fff;
+    color: #1baaa0
+}
+
+.btn--white-primary:hover,button.btn--white-primary:hover {
+    background: #f2fffe
+}
+
+.btn--white-primary:active,.btn--white-primary:focus,button.btn--white-primary:active,button.btn--white-primary:focus {
+    background: #e7fffe
+}
+
+.btn--outline-primary,button.btn--outline-primary {
+    background: #fff;
+    color: #1baaa0;
+    border: 1px solid #1baaa0
+}
+
+.btn--outline-primary:hover,button.btn--outline-primary:hover {
+    background: #f2fffe
+}
+
+.btn--outline-primary:active,.btn--outline-primary:focus,button.btn--outline-primary:active,button.btn--outline-primary:focus {
+    background: #e7fffe
+}
+
+.btn--outline-secondary,button.btn--outline-secondary {
+    background: #fff;
+    color: #f0f0f0;
+    border: 1px solid #f0f0f0
+}
+
+.btn--outline-secondary:active,.btn--outline-secondary:focus,.btn--outline-secondary:hover,button.btn--outline-secondary:active,button.btn--outline-secondary:focus,button.btn--outline-secondary:hover {
+    background: #e7e7e7
+}
+
+.btn--outline-grey,button.btn--outline-grey {
+    background: #fff;
+    color: #707070;
+    border: 1px solid #dde5e5
+}
+
+.btn--outline-grey:active,.btn--outline-grey:focus,.btn--outline-grey:hover,button.btn--outline-grey:active,button.btn--outline-grey:focus,button.btn--outline-grey:hover {
+    background: #e9f3f3
+}
+
+.btn--outline-red,button.btn--outline-red {
+    background: #fff;
+    border: 1px solid #e40f0f
+}
+
+.btn--outline-red:hover,button.btn--outline-red:hover {
+    background: #ffe7e7
+}
+
+.btn--outline-red:active,.btn--outline-red:focus,button.btn--outline-red:active,button.btn--outline-red:focus {
+    background: #ffd7d7
+}
+
+.btn--outline-transparent-primary,button.btn--outline-transparent-primary {
+    background: transparent;
+    color: #1baaa0;
+    border: 1px solid #1baaa0
+}
+
+.btn--outline-transparent-primary:hover,button.btn--outline-transparent-primary:hover {
+    background: #f2fffe
+}
+
+.btn--outline-transparent-primary:active,.btn--outline-transparent-primary:focus,button.btn--outline-transparent-primary:active,button.btn--outline-transparent-primary:focus {
+    background: #e7fffe
+}
+
+.btn--transparent,button.btn--transparent {
+    background: transparent;
+    color: #1baaa0
+}
+
+.btn--transparent:active,.btn--transparent:focus,.btn--transparent:hover,button.btn--transparent:active,button.btn--transparent:focus,button.btn--transparent:hover {
+    color: #148078
+}
+
+.btn--disable,button.btn--disable {
+    background: #f0f0f0;
+    color: #707070
+}
+
+.btn--silver,button.btn--silver {
+    background: #5f6d78;
+    border: 1px solid #5f6d78;
+    color: #fff
+}
+
+.btn--gold,button.btn--gold {
+    background: #fec802;
+    border: 1px solid #fec802;
+    color: #fff
+}
+
+.btn--gold-dark,button.btn--gold-dark {
+    background: #dda307;
+    border: 1px solid #dda307;
+    color: #fff
+}
+
+.btn--premium,button.btn--premium {
+    background: #121213;
+    color: #fff
+}
+
+.btn--white-premium,button.btn--white-premium {
+    background: #fff;
+    color: #fec802
+}
+
+.btn--platinum,button.btn--platinum {
+    background: #353851;
+    border: 1px solid #353851;
+    color: #fff
+}
+
+.btn--latarin,button.btn--latarin {
+    background: #004236;
+    color: #fff
+}
+
+.btn--addon,button.btn--addon {
+    background: #353851;
+    border: 1px solid #353851;
+    color: #fff
+}
+
+.btn--xl,button.btn--xl {
+    height: 57px;
+    font-weight: 700
+}
+
+.btn--lg,button.btn--lg {
+    height: 52px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px
+}
+
+.btn--md,button.btn--md {
+    height: 44px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px
+}
+
+.btn--sm,button.btn--sm {
+    height: 34px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 5px!important
+}
+
+.btn--block,button.btn--block {
+    width: 100%
+}
+
+.btn--normal,button.btn--normal {
+    width: -moz-fit-content;
+    width: fit-content
+}
