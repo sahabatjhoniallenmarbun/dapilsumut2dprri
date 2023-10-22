@@ -187,8 +187,10 @@
     background-color: #24bdb2;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
+    width: 500px;
+    height: 40px;
   }
   #pilihpoto {
     padding: 10px 20px;
