@@ -101,12 +101,14 @@
                       
                     
           
-                    <div class="frame-module__button-container mt--16 mt-md--24">
-                      <button id="pilihpoto" class="btn round--8 d-flex align-items-center justify-content-center button-choose-photo d-flex align-items-center justify-content-center btn round--8 btn--null btn--lg btn--block" id="imageInput" style="--primary: #1BAAA0; --secondary: #EDF8F8; height: 70px;">
+                    <div class="frame-module__button-container mt--16 mt-md--24" style="position: relative;">
+                      <input type="file" class="btn round--8 d-flex align-items-center justify-content-center button-choose-photo d-flex align-items-center justify-content-center btn round--8 btn--null btn--lg btn--block" id="imageInput" style="--primary: #1BAAA0; --secondary: #EDF8F8; height: 70px; position: relative; z-index: 1;">
+                      <button class="btn round--8 d-flex align-items-center justify-content-center button-choose-photo d-flex align-items-center justify-content-center btn round--8 btn--null btn--lg btn--block" style="--primary: #1BAAA0; --secondary: #EDF8F8; height: 70px; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;">
                         <h2>Choose a photo</h2>
-                        <input type="file"  id="imageInput" hidden="hidden">
                       </button>
                     </div>
+                    
+                    
                   
                       
 
@@ -278,5 +280,8 @@ document.getElementById("copyBtn").addEventListener("click", function() {
                 ctx.drawImage(twibbonImg, 0, 0, twibbonCanvas.width, twibbonCanvas.height);
             }
         </script>
+        <script>
+
+       
     </body>
 </html>

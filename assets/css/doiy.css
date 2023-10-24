@@ -152,7 +152,8 @@
     display: none;
 }
 #imageInput{
-    opacity: 0;
+    opacity: 100;
+    width: 800px;
 }
 .copyBtn{
     font-size: larger;
