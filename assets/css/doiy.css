@@ -172,7 +172,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    padding: 25px;
+    padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
@@ -181,18 +181,14 @@
     top: 10px;
     right: 10px;
     cursor: pointer;
-    size: 200;
   }
   #copyBtn {
-    
+    padding: 10px 20px;
     background-color: #24bdb2;
     color: #fff;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
-    width: 500px;
-    height: 60px;
-    font-size: larger;
   }
   #pilihpoto {
     padding: 10px 20px;
