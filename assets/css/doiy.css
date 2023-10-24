@@ -154,6 +154,10 @@
 #imageInput{
     opacity: 0;
 }
+.copyBtn{
+    font-size: larger;
+
+}
 
 
 .popup {
@@ -166,6 +170,7 @@
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
   }
+
   .popup-content {
     position: absolute;
     top: 50%;
@@ -189,6 +194,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: larger;
   }
   #pilihpoto {
     padding: 10px 20px;
